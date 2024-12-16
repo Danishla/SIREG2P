@@ -1,0 +1,11 @@
+main:- nl, write('IDENTIFICA EL ANIMAL '),
+  nl,nl,
+repeat,
+    write('CONSULTA'),
+    borrar_pesos,
+    pesos_clase(1,_,Lw),
+    nl,nl, write(' RESULTADO'),
+    reportar_clase(1,_),
+    nl,write(' Otra consulta? [s/n]:  ' ),read(R),
+  (R=s -> fail;true),
+   nl,nl,write(' FIN '),nl,nl.
